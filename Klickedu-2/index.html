@@ -19,7 +19,7 @@
                     fontFamily: { sans: ['"Poppins"', 'sans-serif'] },
                     colors: {
                         brandDark: '#0F172A',
-                        brandPrimary: '#8B33E8',
+                        brandPrimary: '#E558A0',
                         brandSecondary: '#DE247C',
                         surface: '#F8FAFC',
                     },
@@ -56,7 +56,7 @@
         }
 
         .btn-primary {
-            background: #8B33E8;
+            background: #E558A0;
             transition: all 0.3s ease;
         }
 
@@ -94,7 +94,7 @@
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: #8B33E8;
+            background: #E558A0;
         }
         
         /* Fixed floating Enquire CTA - Desktop */
@@ -116,6 +116,19 @@
         }
         .animate-spin-slow {
             animation: spin 6s linear infinite;
+        }
+
+        .bg-pastel-gradient {
+            background: linear-gradient(135deg, #d4e6fc 0%, #e2d4fb 50%, #fbd5e4 100%);
+            position: relative;
+        }
+        .bg-pastel-gradient::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.08"/%3E%3C/svg%3E');
+            pointer-events: none;
+            mix-blend-mode: overlay;
         }
     </style>
 </head>
@@ -198,7 +211,7 @@
                         Enquire Now
                     </button>
                 </div>
-                <p class="text-xs text-black/80 md:text-gray-500 italic">
+                <p class="text-xs text-black/80 md:text-black italic">
                     *Fees vary based on country, university, hostel, food, travel, visa and currency changes.
                 </p>
             </div>
@@ -233,7 +246,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-12 h-12 rounded-full bg-brandPrimary/10 flex items-center justify-center text-brandPrimary text-xl font-bold">1</div>
                         <div>
@@ -245,12 +258,12 @@
                         <p><strong>Venue:</strong> Park Inn Hotel</p>
                         <p><strong>Time:</strong> 09:00 AM – 06:00 PM</p>
                     </div>
-                    <button onclick="openModal()" class="inline-flex items-center text-brandPrimary font-bold text-sm hover:gap-3 transition-all">
-                        Notify Me <i class="fas fa-arrow-right ml-2"></i>
+                    <button type="button" class="expo-reg-btn mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-brandPrimary hover:text-brandSecondary transition-colors">
+                        Register Free <i class="fa-solid fa-arrow-right text-[14px]"></i>
                     </button>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 text-xl font-bold">2</div>
                         <div>
@@ -262,12 +275,12 @@
                         <p><strong>Venue:</strong> Radisson</p>
                         <p><strong>Time:</strong> 09:00 AM – 06:00 PM</p>
                     </div>
-                    <button onclick="openModal()" class="inline-flex items-center text-orange-600 font-bold text-sm hover:gap-3 transition-all">
-                        Notify Me <i class="fas fa-arrow-right ml-2"></i>
+                    <button type="button" class="expo-reg-btn mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-brandPrimary hover:text-brandSecondary transition-colors">
+                        Register Free <i class="fa-solid fa-arrow-right text-[14px]"></i>
                     </button>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 text-xl font-bold">3</div>
                         <div>
@@ -279,12 +292,12 @@
                         <p><strong>Venue:</strong> Pandian Hotel</p>
                         <p><strong>Time:</strong> 09:00 AM – 06:00 PM</p>
                     </div>
-                    <button onclick="openModal()" class="inline-flex items-center text-emerald-600 font-bold text-sm hover:gap-3 transition-all">
-                        Notify Me <i class="fas fa-arrow-right ml-2"></i>
+                    <button type="button" class="expo-reg-btn mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-brandPrimary hover:text-brandSecondary transition-colors">
+                        Register Free <i class="fa-solid fa-arrow-right text-[14px]"></i>
                     </button>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold">4</div>
                         <div>
@@ -296,12 +309,12 @@
                         <p><strong>Venue:</strong> SRM Hotel</p>
                         <p><strong>Time:</strong> 09:00 AM – 06:00 PM</p>
                     </div>
-                    <button onclick="openModal()" class="inline-flex items-center text-blue-600 font-bold text-sm hover:gap-3 transition-all">
-                        Notify Me <i class="fas fa-arrow-right ml-2"></i>
+                    <button type="button" class="expo-reg-btn mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-brandPrimary hover:text-brandSecondary transition-colors">
+                        Register Free <i class="fa-solid fa-arrow-right text-[14px]"></i>
                     </button>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 text-xl font-bold">5</div>
                         <div>
@@ -318,7 +331,7 @@
                     </button>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-xl font-bold">6</div>
                         <div>
@@ -489,37 +502,37 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="w-16 h-16 bg-brandPrimary/10 rounded-xl flex items-center justify-center text-brandPrimary text-3xl mb-6 font-bold">1</div>
                     <h3 class="text-xl font-bold text-brandDark mb-3">Verified University Guidance</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">We guide students toward suitable universities based on eligibility, budget, country preference and future goals.</p>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="w-16 h-16 bg-brandSecondary/10 rounded-xl flex items-center justify-center text-brandSecondary text-3xl mb-6 font-bold">2</div>
                     <h3 class="text-xl font-bold text-brandDark mb-3">Dedicated Counsellors</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">Every student gets personal counselling support from initial enquiry to admission and travel preparation.</p>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="w-16 h-16 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 text-3xl mb-6 font-bold">3</div>
                     <h3 class="text-xl font-bold text-brandDark mb-3">Transparent Fee Planning</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">We explain tuition fees, hostel, food, visa, travel and other expenses before the family decides.</p>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-3xl mb-6 font-bold">3</div>
                     <h3 class="text-xl font-bold text-brandDark mb-3">Accommodation Support</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">From hostel options to settling-in guidance, KlickEdu helps students prepare for life abroad.</p>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 text-3xl mb-6 font-bold">4</div>
                     <h3 class="text-xl font-bold text-brandDark mb-3">Parent-Friendly Process</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">Parents get clear answers about safety, travel, stay, food, support system and career pathway.</p>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div class="group card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                     <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 text-3xl mb-6 font-bold">5</div>
                     <h3 class="text-xl font-bold text-brandDark mb-3">End-to-End Assistance</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">Admission, documentation, visa guidance, travel planning and post-arrival support — all in one process.</p>
@@ -584,7 +597,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-brandDark text-sm md:text-base">Student Testimonials</h4>
-                            <p class="text-xs md:text-sm text-gray-500 mt-0.5">Verified text & video feedback from currently enrolled medical students.</p>
+                            <p class="text-xs md:text-sm text-black mt-0.5">Verified text & video feedback from currently enrolled medical students.</p>
                         </div>
                     </div>
 
@@ -594,7 +607,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-brandDark text-sm md:text-base">Parent Testimonials</h4>
-                            <p class="text-xs md:text-sm text-gray-500 mt-0.5">Reviews highlighting peace of mind regarding safety, finances, and support.</p>
+                            <p class="text-xs md:text-sm text-black mt-0.5">Reviews highlighting peace of mind regarding safety, finances, and support.</p>
                         </div>
                     </div>
 
@@ -604,7 +617,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-brandDark text-sm md:text-base">Admission Letter Screenshots</h4>
-                            <p class="text-xs md:text-sm text-gray-500 mt-0.5">Authentic copies of official university offer letters (with blurred personal data).</p>
+                            <p class="text-xs md:text-sm text-black mt-0.5">Authentic copies of official university offer letters (with blurred personal data).</p>
                         </div>
                     </div>
 
@@ -614,7 +627,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-brandDark text-sm md:text-base">Visa Success Stories</h4>
-                            <p class="text-xs md:text-sm text-gray-500 mt-0.5">Documented proof of timely, error-free visa approvals across international borders.</p>
+                            <p class="text-xs md:text-sm text-black mt-0.5">Documented proof of timely, error-free visa approvals across international borders.</p>
                         </div>
                     </div>
 
@@ -624,7 +637,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-brandDark text-sm md:text-base">Departure & Visit Photos</h4>
-                            <p class="text-xs md:text-sm text-gray-500 mt-0.5">Airport drop-off logs and interactive on-site campus inspection imagery.</p>
+                            <p class="text-xs md:text-sm text-black mt-0.5">Airport drop-off logs and interactive on-site campus inspection imagery.</p>
                         </div>
                     </div>
 
@@ -634,7 +647,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-brandDark text-sm md:text-base">Country-Wise Student Success Count</h4>
-                            <p class="text-xs md:text-sm text-gray-500 mt-0.5">Transparent tallies showing our active footprints across globally recognized hubs.</p>
+                            <p class="text-xs md:text-sm text-black mt-0.5">Transparent tallies showing our active footprints across globally recognized hubs.</p>
                         </div>
                     </div>
                 </div>
@@ -760,7 +773,7 @@
                     Book My Free Registration
                 </button>
 
-                <p class="text-xs text-gray-500 text-center mt-6 leading-relaxed">
+                <p class="text-xs text-black text-center mt-6 leading-relaxed">
                     Your details will be used only for MBBS expo updates, eligibility checking and counselling support.
                 </p>
             </form>
@@ -788,8 +801,8 @@
                     </div>
 
                     <div class="space-y-4 mb-8">
-                        <p class="text-sm text-gray-500 font-medium leading-relaxed">Student empowering platform</p>
-                        <p class="text-sm text-gray-500 font-medium leading-relaxed pr-4">Custom-made education
+                        <p class="text-sm text-black font-medium leading-relaxed">Student empowering platform</p>
+                        <p class="text-sm text-black font-medium leading-relaxed pr-4">Custom-made education
                             solutions for the New Generation</p>
                     </div>
                     <div class="space-y-3 text-sm font-bold text-brandDark">
@@ -821,7 +834,7 @@
                                 <h5 class="text-brandDark font-bold text-sm flex items-center gap-2 mb-2">
                                     <i class="fa-solid fa-location-dot text-gray-400"></i> Kerala :
                                 </h5>
-                                <p class="text-xs text-gray-500 font-medium leading-relaxed pl-5">
+                                <p class="text-xs text-black font-medium leading-relaxed pl-5">
                                     KlickEdu, 1st Floor,<br>
                                     MS Building, behind<br>
                                     New Theatre,<br>
@@ -834,7 +847,7 @@
                                 <h5 class="text-brandDark font-bold text-sm flex items-center gap-2 mb-2">
                                     <i class="fa-solid fa-location-dot text-gray-400"></i> Coimbatore :
                                 </h5>
-                                <p class="text-xs text-gray-500 font-medium leading-relaxed pl-5">
+                                <p class="text-xs text-black font-medium leading-relaxed pl-5">
                                     DR. No.1270BCD,<br>
                                     2nd floor, SB Classic<br>
                                     Towers,<br>
@@ -851,7 +864,7 @@
                                 <h5 class="text-brandDark font-bold text-sm flex items-center gap-2 mb-2">
                                     <i class="fa-solid fa-location-dot text-gray-400"></i> Vadodara :
                                 </h5>
-                                <p class="text-xs text-gray-500 font-medium leading-relaxed pl-5">
+                                <p class="text-xs text-black font-medium leading-relaxed pl-5">
                                     Indraprasth<br>
                                     Complex, 1st Floor,<br>
                                     Nizampura Main<br>
@@ -865,7 +878,7 @@
                                 <h5 class="text-brandDark font-bold text-sm flex items-center gap-2 mb-2">
                                     <i class="fa-solid fa-location-dot text-gray-400"></i> Agra :
                                 </h5>
-                                <p class="text-xs text-gray-500 font-medium leading-relaxed pl-5">
+                                <p class="text-xs text-black font-medium leading-relaxed pl-5">
                                     Shop no -1, First<br>
                                     Floor,<br>
                                     Vinayak Mall,<br>
@@ -886,7 +899,7 @@
 
                     <div class="mb-6">
                         <h5 class="text-brandDark font-bold text-sm mb-2">Overseas :</h5>
-                        <ul class="space-y-1.5 text-xs text-gray-500 font-medium list-disc pl-5 marker:text-gray-300">
+                        <ul class="space-y-1.5 text-xs text-black font-medium list-disc pl-5 marker:text-gray-300">
                             <li>Kathmandu, Nepal</li>
                             <li>Dhaka, Bangladesh</li>
                             <li>Colombo, Sri Lanka</li>
@@ -895,7 +908,7 @@
 
                     <div>
                         <h5 class="text-brandDark font-bold text-sm mb-2">India :</h5>
-                        <ul class="space-y-1.5 text-xs text-gray-500 font-medium list-disc pl-5 marker:text-gray-300">
+                        <ul class="space-y-1.5 text-xs text-black font-medium list-disc pl-5 marker:text-gray-300">
                             <li>Rajasthan</li>
                             <li>Delhi -NCR</li>
                             <li>Uttar Pradesh</li>
@@ -913,7 +926,7 @@
 
             </div>
 
-            <div class="text-center md:text-left text-xs font-medium text-gray-500 pt-8 border-t border-gray-200">
+            <div class="text-center md:text-left text-xs font-medium text-black pt-8 border-t border-gray-200">
                 <p>© 2026 All Rights Reserved by DSA Global Pvt Ltd, Parent Company of KlickEdu.</p>
             </div>
         </div>
@@ -925,7 +938,7 @@
         <div class="fixed inset-0 flex items-center justify-center p-4 sm:p-6 pointer-events-none">
             <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[95vh] overflow-y-auto pointer-events-auto transform scale-95 opacity-0 transition-all duration-300 modal-content relative">
                 
-                <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-red-100 hover:text-red-500 transition-colors z-10">
+                <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-black hover:bg-red-100 hover:text-red-500 transition-colors z-10">
                     <i class="fas fa-times text-lg"></i>
                 </button>
 

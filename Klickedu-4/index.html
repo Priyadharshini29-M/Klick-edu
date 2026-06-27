@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="../assets/logo2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,10 +18,10 @@
             theme: {
                 extend: {
 
-                    fontFamily: { sans: ['"Inter"', '"Inter Fallback"'] },
+                    fontFamily: { sans: ['"Poppins"', 'sans-serif'] },
                     colors: {
                         brandDark: '#0F172A',
-                        brandPrimary: '#8B33E8',
+                        brandPrimary: '#E558A0',
                         brandSecondary: '#DE247C',
                         surface: '#F8FAFC',
                     },
@@ -88,7 +88,7 @@
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: #8B33E8;
+            background: #E558A0;
         }
 
         .no-scrollbar::-webkit-scrollbar {
@@ -478,7 +478,7 @@
             <div class="w-full lg:flex-1 order-1 flex flex-col">
                 
                 <div class="mb-8 lg:mb-10 text-center lg:text-left gs-reveal mx-auto lg:mx-0 w-full">
-                    <h2 class="text-sm font-bold text-brandPrimary tracking-widest uppercase mb-2 text-purple-600">2026 Itinerary</h2>
+                    <h2 class="text-sm font-bold text-brandPrimary tracking-widest uppercase mb-2 text-[#E558A0]">2026 Itinerary</h2>
                     <h3 class="text-3xl md:text-4xl font-bold text-brandDark tracking-tight text-gray-900">Catch the Expo in your city.</h3>
                     <p class="text-gray-600 mt-3 font-medium max-w-xl mx-auto lg:mx-0 text-sm md:text-base">
                         We are traveling across Tamil Nadu to bring expert medical guidance directly to you. Select a location on the map to view details.
@@ -496,63 +496,63 @@
                         <div id="mapInfoCard" class="absolute top-3 left-3 z-20 bg-white/90 backdrop-blur-sm rounded-xl border border-gray-100 shadow-lg px-3 py-2.5 pointer-events-none min-w-[100px]">
                             <p id="infoCity" class="text-xs font-extrabold text-brandDark leading-tight"></p>
                             <p id="infoDate" class="text-[11px] font-bold text-brandPrimary leading-tight mt-0.5"></p>
-                            <p id="infoVenue" class="text-[10px] text-gray-500 font-medium leading-tight mt-0.5"></p>
+                            <p id="infoVenue" class="text-[10px] text-black font-medium leading-tight mt-0.5"></p>
                         </div>
 
                         <button class="city-pin group absolute top-[17%] left-[75%] flex flex-col items-center gap-1 focus:outline-none" data-id="chennai">
                             <div class="relative flex h-5 w-5 items-center justify-center">
-                                <span class="absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75 group-hover:animate-ping transition-all duration-300"></span>
-                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-purple-600 transition-colors"></span>
+                                <span class="absolute inline-flex h-full w-full rounded-full bg-[#E558A0] opacity-75 group-hover:animate-ping transition-all duration-300"></span>
+                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-[#E558A0] transition-colors"></span>
                             </div>
-                            <span class="pin-label text-xs font-bold text-gray-500 group-hover:text-purple-700 transition-colors">Chennai</span>
+                            <span class="pin-label text-xs font-bold text-black group-hover:text-[#E558A0] transition-colors">Chennai</span>
                         </button>
 
                         <button class="city-pin group absolute top-[43%] left-[72%] flex flex-col items-center gap-1 focus:outline-none" data-id="pondicherry">
                             <div class="relative flex h-5 w-5 items-center justify-center">
-                                <span class="absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-0 group-hover:opacity-75 group-hover:animate-ping transition-all duration-300"></span>
-                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-purple-600 transition-colors"></span>
+                                <span class="absolute inline-flex h-full w-full rounded-full bg-[#E558A0] opacity-0 group-hover:opacity-75 group-hover:animate-ping transition-all duration-300"></span>
+                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-[#E558A0] transition-colors"></span>
                             </div>
-                            <span class="pin-label text-xs font-bold text-gray-500 group-hover:text-purple-700 transition-colors">Pondicherry</span>
+                            <span class="pin-label text-xs font-bold text-black group-hover:text-[#E558A0] transition-colors">Pondicherry</span>
                         </button>
 
                         <button class="city-pin active-pin group absolute top-[36%] left-[47%] flex flex-col items-center gap-1 focus:outline-none" data-id="salem">
                             <div class="relative flex h-5 w-5 items-center justify-center">
-                                <span class="absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75 animate-ping"></span>
-                                <span class="pin-dot relative inline-flex rounded-full h-4 w-4 bg-purple-600 border-2 border-white shadow-md transition-colors"></span>
+                                <span class="absolute inline-flex h-full w-full rounded-full bg-[#E558A0] opacity-75 animate-ping"></span>
+                                <span class="pin-dot relative inline-flex rounded-full h-4 w-4 bg-[#E558A0] border-2 border-white shadow-md transition-colors"></span>
                             </div>
-                            <span class="pin-label text-xs font-bold text-purple-700 transition-colors">Salem</span>
+                            <span class="pin-label text-xs font-bold text-[#E558A0] transition-colors">Salem</span>
                         </button>
 
                         <button class="city-pin group absolute top-[39%] left-[31%] flex flex-col items-center gap-1 focus:outline-none" data-id="erode">
                             <div class="relative flex h-5 w-5 items-center justify-center">
-                                <span class="absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-0 group-hover:opacity-75 group-hover:animate-ping transition-all duration-300"></span>
-                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-purple-600 transition-colors"></span>
+                                <span class="absolute inline-flex h-full w-full rounded-full bg-[#E558A0] opacity-0 group-hover:opacity-75 group-hover:animate-ping transition-all duration-300"></span>
+                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-[#E558A0] transition-colors"></span>
                             </div>
-                            <span class="pin-label text-xs font-bold text-gray-500 group-hover:text-purple-700 transition-colors">Erode</span>
+                            <span class="pin-label text-xs font-bold text-black group-hover:text-[#E558A0] transition-colors">Erode</span>
                         </button>
 
                         <button class="city-pin group absolute top-[49%] left-[25%] flex flex-col items-center gap-1 focus:outline-none" data-id="coimbatore">
                             <div class="relative flex h-5 w-5 items-center justify-center">
-                                <span class="absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-0 group-hover:opacity-75 group-hover:animate-ping transition-all duration-300"></span>
-                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-purple-600 transition-colors"></span>
+                                <span class="absolute inline-flex h-full w-full rounded-full bg-[#E558A0] opacity-0 group-hover:opacity-75 group-hover:animate-ping transition-all duration-300"></span>
+                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-[#E558A0] transition-colors"></span>
                             </div>
-                            <span class="pin-label text-xs font-bold text-gray-500 group-hover:text-purple-700 transition-colors">Coimbatore</span>
+                            <span class="pin-label text-xs font-bold text-black group-hover:text-[#E558A0] transition-colors">Coimbatore</span>
                         </button>
 
                         <button class="city-pin group absolute top-[50%] left-[55%] flex flex-col items-center gap-1 focus:outline-none" data-id="trichy">
                             <div class="relative flex h-5 w-5 items-center justify-center">
-                                <span class="absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-0 group-hover:opacity-75 group-hover:animate-ping transition-all duration-300"></span>
-                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-purple-600 transition-colors"></span>
+                                <span class="absolute inline-flex h-full w-full rounded-full bg-[#E558A0] opacity-0 group-hover:opacity-75 group-hover:animate-ping transition-all duration-300"></span>
+                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-[#E558A0] transition-colors"></span>
                             </div>
-                            <span class="pin-label text-xs font-bold text-gray-500 group-hover:text-purple-700 transition-colors">Trichy</span>
+                            <span class="pin-label text-xs font-bold text-black group-hover:text-[#E558A0] transition-colors">Trichy</span>
                         </button>
 
                         <button class="city-pin group absolute top-[65%] left-[42%] flex flex-col items-center gap-1 focus:outline-none" data-id="madurai">
                             <div class="relative flex h-5 w-5 items-center justify-center">
-                                <span class="absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-0 group-hover:opacity-75 group-hover:animate-ping transition-all duration-300"></span>
-                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-purple-600 transition-colors"></span>
+                                <span class="absolute inline-flex h-full w-full rounded-full bg-[#E558A0] opacity-0 group-hover:opacity-75 group-hover:animate-ping transition-all duration-300"></span>
+                                <span class="pin-dot relative inline-flex rounded-full h-3 w-3 bg-gray-400 group-hover:bg-[#E558A0] transition-colors"></span>
                             </div>
-                            <span class="pin-label text-xs font-bold text-gray-500 group-hover:text-purple-700 transition-colors">Madurai</span>
+                            <span class="pin-label text-xs font-bold text-black group-hover:text-[#E558A0] transition-colors">Madurai</span>
                         </button>
 
                     </div>
@@ -614,7 +614,7 @@
 
         <div class="text-center flex justify-center mt-10 relative z-20">
             <a href="#contact"
-                class="inline-flex items-center justify-center px-10 py-3.5 text-sm font-bold text-white bg-purple-600 hover:bg-purple-700 rounded-full shadow-lg hover:shadow-xl transition-all w-full sm:w-auto focus:ring-4 focus:ring-purple-200">
+                class="inline-flex items-center justify-center px-10 py-3.5 text-sm font-bold text-white bg-[#E558A0] hover:bg-[#c44a8f] rounded-full shadow-lg hover:shadow-xl transition-all w-full sm:w-auto focus:ring-4 focus:ring-[#E558A0]/30">
                 Free Registration
             </a>
         </div>
@@ -627,7 +627,7 @@
         const locationsData = {
             salem:       { name: 'Salem',      date: 'Jun 27, 2026', venue: 'Radisson',     video: '../assets/salem.mp4' },
             chennai:     { name: 'Chennai',    date: 'Jun 28, 2026', venue: 'Park Inn',     video: '../assets/chennai.mp4' },
-            erode:       { name: 'Erode',      date: 'Jun 26, 2026', venue: 'TBA',             video: '../assets/Erode.webm' },
+            erode:       { name: 'Erode',      date: 'Jun 26, 2026', venue: 'Turmeric Hotel',             video: '../assets/Erode.webm' },
             coimbatore:  { name: 'Coimbatore', date: 'Jul 05, 2026', venue: 'Zone by Park', video: '../assets/coimbatore.mp4' },
             trichy:      { name: 'Trichy',     date: 'Jul 03, 2026', venue: 'SRM',          video: '../assets/trichy.mp4' },
             madurai:     { name: 'Madurai',    date: 'Jul 04, 2026', venue: 'Pandian',       video: '../assets/madurai.mp4' },
@@ -653,28 +653,28 @@
             // Reset all pins
             pins.forEach(p => {
                 p.classList.remove('active-pin');
-                const ping = p.querySelector('.absolute.inline-flex.rounded-full.bg-purple-400');
+                const ping = p.querySelector('.absolute.inline-flex.rounded-full');
                 const dot = p.querySelector('.pin-dot');
                 const label = p.querySelector('.pin-label');
                 if (ping) { ping.classList.remove('opacity-75', 'animate-ping'); ping.classList.add('opacity-0'); }
-                dot.classList.remove('bg-purple-600', 'h-4', 'w-4', 'border-2', 'border-white', 'shadow-md');
+                dot.classList.remove('bg-[#E558A0]', 'h-4', 'w-4', 'border-2', 'border-white', 'shadow-md');
                 dot.classList.add('bg-gray-400', 'h-3', 'w-3');
-                label.classList.remove('text-purple-700');
-                label.classList.add('text-gray-500');
+                label.classList.remove('text-[#E558A0]');
+                label.classList.add('text-black');
             });
 
             // Activate target pin
             const activePin = document.querySelector(`.city-pin[data-id="${cityId}"]`);
             if (activePin) {
                 activePin.classList.add('active-pin');
-                const ping = activePin.querySelector('.absolute.inline-flex.rounded-full.bg-purple-400');
+                const ping = activePin.querySelector('.absolute.inline-flex.rounded-full');
                 const dot = activePin.querySelector('.pin-dot');
                 const label = activePin.querySelector('.pin-label');
                 if (ping) { ping.classList.remove('opacity-0'); ping.classList.add('opacity-75', 'animate-ping'); }
                 dot.classList.remove('bg-gray-400', 'h-3', 'w-3');
-                dot.classList.add('bg-purple-600', 'h-4', 'w-4', 'border-2', 'border-white', 'shadow-md');
-                label.classList.remove('text-gray-500');
-                label.classList.add('text-purple-700');
+                dot.classList.add('bg-[#E558A0]', 'h-4', 'w-4', 'border-2', 'border-white', 'shadow-md');
+                label.classList.remove('text-black');
+                label.classList.add('text-[#E558A0]');
             }
 
             // Fade overlay → update → fade in
@@ -771,7 +771,7 @@
                     <div class="pl-5 border-l-4 border-brandSecondary py-2 relative">
                         <div class="absolute -left-2 top-0 text-brandSecondary/20 text-4xl font-serif leading-none">"
                         </div>
-                        <p class="text-sm text-gray-500 font-semibold italic relative z-10 leading-relaxed">
+                        <p class="text-sm text-black font-semibold italic relative z-10 leading-relaxed">
                             The most transparent and effective medical admission summit operating across South India.
                         </p>
                     </div>
@@ -796,7 +796,7 @@
                                 <span class="text-3xl font-bold text-brandPrimary pb-1">+</span>
                             </div>
                             <h5 class="text-base font-bold text-brandDark mb-2">Global Universities</h5>
-                            <p class="text-sm text-gray-500 leading-relaxed font-medium">Authorized delegates from
+                            <p class="text-sm text-black leading-relaxed font-medium">Authorized delegates from
                                 top-tier institutions worldwide.</p>
                         </div>
 
@@ -812,7 +812,7 @@
                                 <span class="text-3xl font-bold text-brandSecondary pb-1">+</span>
                             </div>
                             <h5 class="text-base font-bold text-brandDark mb-2">Countries Represented</h5>
-                            <p class="text-sm text-gray-500 leading-relaxed font-medium">Spanning across Europe, Asia,
+                            <p class="text-sm text-black leading-relaxed font-medium">Spanning across Europe, Asia,
                                 and the Americas.</p>
                         </div>
 
@@ -887,7 +887,7 @@
             <div class="relative">
 
                 <div class="hidden lg:block absolute top-[72px] left-[12.5%] right-[12.5%] h-0.5 z-0"
-                    style="background: linear-gradient(to right, #8B33E8, #DE247C, #10b981, #3b82f6);">
+                    style="background: linear-gradient(to right, #E558A0, #DE247C, #10b981, #3b82f6);">
                 </div>
 
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6 relative z-10">
@@ -900,8 +900,8 @@
                             </div>
                             <span class="absolute -top-2 -right-1 w-7 h-7 rounded-full bg-brandPrimary text-white text-[11px] font-black flex items-center justify-center shadow ring-2 ring-white">1</span>
                         </div>
-                        <h4 class="text-sm font-bold text-brandDark mb-2 leading-snug">1-on-1 Expert Counseling</h4>
-                        <p class="text-xs text-gray-500 leading-relaxed max-w-[160px]">Sit down with seasoned medical admission experts to find the best universities for your NEET score and budget.</p>
+                        <h4 class="text-lg font-bold text-brandDark mb-2 leading-snug">1-on-1 Expert Counseling</h4>
+                        <p class="text-sm text-black leading-relaxed max-w-[180px]">Sit down with seasoned medical admission experts to find the best universities for your NEET score and budget.</p>
                     </div>
 
                     <div class="flex flex-col items-center text-center group gs-reveal">
@@ -912,8 +912,8 @@
                             </div>
                             <span class="absolute -top-2 -right-1 w-7 h-7 rounded-full bg-brandSecondary text-white text-[11px] font-black flex items-center justify-center shadow ring-2 ring-white">2</span>
                         </div>
-                        <h4 class="text-sm font-bold text-brandDark mb-2 leading-snug">Scholarship Assessment</h4>
-                        <p class="text-xs text-gray-500 leading-relaxed max-w-[160px]">Discover hidden financial aid. Get your profile evaluated on the spot for exclusive tuition fee waivers.</p>
+                        <h4 class="text-lg font-bold text-brandDark mb-2 leading-snug">Scholarship Assessment</h4>
+                        <p class="text-sm text-black leading-relaxed max-w-[180px]">Discover hidden financial aid. Get your profile evaluated on the spot for exclusive tuition fee waivers.</p>
                     </div>
 
                     <div class="flex flex-col items-center text-center group gs-reveal">
@@ -924,8 +924,8 @@
                             </div>
                             <span class="absolute -top-2 -right-1 w-7 h-7 rounded-full bg-emerald-500 text-white text-[11px] font-black flex items-center justify-center shadow ring-2 ring-white">3</span>
                         </div>
-                        <h4 class="text-sm font-bold text-brandDark mb-2 leading-snug">Direct University Access</h4>
-                        <p class="text-xs text-gray-500 leading-relaxed max-w-[160px]">Speak directly with authorized delegates and deans from top MCI & WHO recognised institutions abroad.</p>
+                        <h4 class="text-lg font-bold text-brandDark mb-2 leading-snug">Direct University Access</h4>
+                        <p class="text-sm !text-black leading-relaxed max-w-[180px]">Speak directly with authorized delegates and deans from top MCI & WHO recognised institutions abroad.</p>
                     </div>
 
                     <div class="flex flex-col items-center text-center group gs-reveal">
@@ -936,8 +936,8 @@
                             </div>
                             <span class="absolute -top-2 -right-1 w-7 h-7 rounded-full bg-blue-500 text-white text-[11px] font-black flex items-center justify-center shadow ring-2 ring-white">4</span>
                         </div>
-                        <h4 class="text-sm font-bold text-brandDark mb-2 leading-snug">End-to-End Support</h4>
-                        <p class="text-xs text-gray-500 leading-relaxed max-w-[160px]">From documentation and visa processing to forex, our team guides you every step until graduation.</p>
+                        <h4 class="text-sm font-bold text-brandDark mb-2 leading-snug"></h4>
+                        <p class="text-xs text-black leading-relaxed max-w-[180px]">From documentation and visa processing to forex, our team guides you every step until graduation.</p>
                     </div>
 
                 </div>
@@ -971,8 +971,8 @@
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brandPrimary/10 text-brandPrimary text-xs font-bold mb-4 uppercase tracking-wider border border-brandPrimary/20">
                     <span class="w-2 h-2 rounded-full bg-brandPrimary animate-pulse"></span> Past Expos
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-brandDark mb-3 tracking-tight">1000 + students garaduated as a doctor</h2>
-                <p class="text-gray-500 max-w-xl mx-auto text-sm font-medium leading-relaxed">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brandDark mb-3 tracking-tight">1000 + students graduated as a doctor</h2>
+                <p class="text-black max-w-xl mx-auto text-sm font-medium leading-relaxed">
                     Thousands of students have already attended our expos. Here's a glimpse from the ground.
                 </p>
             </div>
@@ -1054,12 +1054,12 @@
                     <div class="mt-12 lg:mt-0 space-y-8 border-t border-gray-100 pt-8">
                         <div class="border-l-2 border-brandPrimary pl-5">
                             <h4 class="text-sm font-bold text-brandDark uppercase tracking-wider">24/7 Dedicated Support</h4>
-                            <p class="text-sm text-gray-500 mt-1">We are always here to guide you along the journey.</p>
+                            <p class="text-sm text-black mt-1">We are always here to guide you along the journey.</p>
                         </div>
 
                         <div class="border-l-2 border-brandSecondary pl-5">
                             <h4 class="text-sm font-bold text-brandDark uppercase tracking-wider">Quick Turnaround</h4>
-                            <p class="text-sm text-gray-500 mt-1">Expect an advisor to call you back within 30 minutes.</p>
+                            <p class="text-sm text-black mt-1">Expect an advisor to call you back within 30 minutes.</p>
                         </div>
                     </div>
                 </div>
@@ -1142,8 +1142,8 @@
                     </div>
 
                     <div class="space-y-4 mb-8">
-                        <p class="text-sm text-gray-500 font-medium leading-relaxed">Student empowering platform</p>
-                        <p class="text-sm text-gray-500 font-medium leading-relaxed pr-4">Custom-made education
+                        <p class="text-sm text-black font-medium leading-relaxed">Student empowering platform</p>
+                        <p class="text-sm text-black font-medium leading-relaxed pr-4">Custom-made education
                             solutions for the New Generation</p>
                     </div>
                     <div class="space-y-3 text-sm font-bold text-brandDark">
@@ -1175,7 +1175,7 @@
                                 <h5 class="text-brandDark font-bold text-sm flex items-center gap-2 mb-2">
                                     <i class="fa-solid fa-location-dot text-gray-400"></i> Kerala :
                                 </h5>
-                                <p class="text-xs text-gray-500 font-medium leading-relaxed pl-5">
+                                <p class="text-xs text-black font-medium leading-relaxed pl-5">
                                     KlickEdu, 1st Floor,<br>
                                     MS Building, behind<br>
                                     New Theatre,<br>
@@ -1188,7 +1188,7 @@
                                 <h5 class="text-brandDark font-bold text-sm flex items-center gap-2 mb-2">
                                     <i class="fa-solid fa-location-dot text-gray-400"></i> Coimbatore :
                                 </h5>
-                                <p class="text-xs text-gray-500 font-medium leading-relaxed pl-5">
+                                <p class="text-xs text-black font-medium leading-relaxed pl-5">
                                     DR. No.1270BCD,<br>
                                     2nd floor, SB Classic<br>
                                     Towers,<br>
@@ -1205,7 +1205,7 @@
                                 <h5 class="text-brandDark font-bold text-sm flex items-center gap-2 mb-2">
                                     <i class="fa-solid fa-location-dot text-gray-400"></i> Vadodara :
                                 </h5>
-                                <p class="text-xs text-gray-500 font-medium leading-relaxed pl-5">
+                                <p class="text-xs text-black font-medium leading-relaxed pl-5">
                                     Indraprasth<br>
                                     Complex, 1st Floor,<br>
                                     Nizampura Main<br>
@@ -1219,7 +1219,7 @@
                                 <h5 class="text-brandDark font-bold text-sm flex items-center gap-2 mb-2">
                                     <i class="fa-solid fa-location-dot text-gray-400"></i> Agra :
                                 </h5>
-                                <p class="text-xs text-gray-500 font-medium leading-relaxed pl-5">
+                                <p class="text-xs text-black font-medium leading-relaxed pl-5">
                                     Shop no -1, First<br>
                                     Floor,<br>
                                     Vinayak Mall,<br>
@@ -1240,7 +1240,7 @@
 
                     <div class="mb-6">
                         <h5 class="text-brandDark font-bold text-sm mb-2">Overseas :</h5>
-                        <ul class="space-y-1.5 text-xs text-gray-500 font-medium list-disc pl-5 marker:text-gray-300">
+                        <ul class="space-y-1.5 text-xs text-black font-medium list-disc pl-5 marker:text-gray-300">
                             <li>Kathmandu, Nepal</li>
                             <li>Dhaka, Bangladesh</li>
                             <li>Colombo, Sri Lanka</li>
@@ -1249,7 +1249,7 @@
 
                     <div>
                         <h5 class="text-brandDark font-bold text-sm mb-2">India :</h5>
-                        <ul class="space-y-1.5 text-xs text-gray-500 font-medium list-disc pl-5 marker:text-gray-300">
+                        <ul class="space-y-1.5 text-xs text-black font-medium list-disc pl-5 marker:text-gray-300">
                             <li>Rajasthan</li>
                             <li>Delhi -NCR</li>
                             <li>Uttar Pradesh</li>
@@ -1267,7 +1267,7 @@
 
             </div>
 
-            <div class="text-center md:text-left text-xs font-medium text-gray-500 pt-8 border-t border-gray-200">
+            <div class="text-center md:text-left text-xs font-medium text-black pt-8 border-t border-gray-200">
                 <p>© 2026 All Rights Reserved by DSA Global Pvt Ltd, Parent Company of KlickEdu.</p>
             </div>
         </div>
@@ -1659,7 +1659,7 @@
     <div id="regModalBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
     <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg z-10 overflow-hidden">
         <div class="bg-pastel-gradient px-8 pt-8 pb-6 border-b border-gray-100">
-            <button id="regModalClose" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white/80 text-gray-500 hover:text-gray-800 transition-colors shadow-sm">
+            <button id="regModalClose" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white/80 text-black hover:text-gray-800 transition-colors shadow-sm">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <p class="text-[10px] font-bold text-brandSecondary uppercase tracking-wider mb-1">Medico Expo 2026</p>
